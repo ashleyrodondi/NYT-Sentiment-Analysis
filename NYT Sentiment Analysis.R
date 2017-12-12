@@ -6,7 +6,7 @@
   library(knitr)
 
 # Identifying New York Times Development Network API Key
-  NYT_APIKEY = ""
+  NYT_APIKEY = "INSERT KEY"
 
 # Results 0-20 reviews as of November 21, 2017
   NYTReviews_URL_1 = paste0('http://api.nytimes.com/svc/movies/v2/reviews/search.json?opening-date=2017-10-13;2017-11-21&api-key=', NYT_APIKEY , '&order=by-title', collapse = "") # Results 0-20 URL
@@ -78,7 +78,7 @@ write.table(combo.reviews.links.df, "New York Times Movie Reviews1.csv") # Expor
   library(indicoio)
 
 # indico.io API Key
-  indico.io_APIkey <-""
+  indico.io_APIkey <-"INSERT KEY"
 
 # Retrieving list of 65 movies curated from the NYT API pull
   movie_list_url <- "https://raw.githubusercontent.com/ashleyrodondi/NYT-Sentiment-Analysis/master/New%20York%20Times%20Movie%20Reviews.csv"
